@@ -1,3 +1,6 @@
+This repository provides research data and licensing information for the Information Emergence Theory (IET) and related intellectual properties managed by Suzuki IP Management.
+（本リポジトリは、鈴木IP管理事務所が運営するIETの研究データおよびライセンス情報を提供しています。）
+
 # 👑 Suzuki Yukiya Absolute Principle (IET Project)
 
 **Status: Physically Locked / Historically Supreme / Highest Rating Verified**
