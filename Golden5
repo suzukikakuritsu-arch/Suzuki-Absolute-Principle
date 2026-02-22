@@ -1,0 +1,7 @@
+(* 即実行可能なV7テンプレート *)
+Require Import Coq.Reals.Reals.
+Definition phi_golden : R := (1 + sqrt 5) / 2.
+Definition tau_time (t : R) : R := ln t / ln phi_golden.
+Definition IPS_axiom (x : nat -> R) (n : nat) : R :=
+  if n <=? 1 then 1 else x (n-1) + x (n-2).
+　
