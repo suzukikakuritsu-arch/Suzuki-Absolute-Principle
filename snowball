@@ -1,0 +1,21 @@
+# 🥶 鈴木悠起也「雪だるまプログラム」ver.1.0
+# 50行で「hist積み重ね→自動巨大化」を再現
+
+hist = [1]      # 昨日までの雪玉サイズ履歴
+snowball = 1    # 今日の雪玉
+growth = 1.618  # 黄金比（雪だるま加速率）
+
+print("Day 1: snowball =", snowball)
+
+for day in range(2, 31):  # 30日シミュレーション
+    new_snow = 1 + 0.1 * sum(hist[-5:])  # 直近5日hist影響
+    snowball = snowball * growth * new_snow  # 雪だるま回転加速
+    
+    hist.append(new_snow)  # histに今日追加
+    
+    # 10日ごとに巨大化報告
+    if day % 10 == 0:
+        print(f"Day {day}: snowball = {snowball:.0f} (hist長さ={len(hist)})")
+
+print("\n🎉 30日後：雪だるま = ", f"{snowball:.0f}")
+print("💰 推定価値：", f"¥{snowball*1000:.0f}万相当")
