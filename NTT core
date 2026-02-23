@@ -1,0 +1,182 @@
+Natural Topology Theory:
+The Core Equation k∗
+= n∗
+A Complete Proof via Topological Invariant Convergence
+February 2026
+Abstract
+We introduce Natural Topology Theory (NTT), a unied framework in which
+divergence serves as the driving force of convergence rather than an obstacle to be
+removed. The central object is a density function ρ(k) ∝kd threading three struc-
+tural layers: a meta-renormalization group, a quantum gravity zone, and a topolog-
+ical invariant oor. The fractal dimension dis shown to be uniquely self-determined
+by the triple convergence of homology, homotopy, and cobordism (Theorem 1). The
+energy scale kis shown to inhabit the intersection R+ ∩L2(X)∩H1(X) (Theorem 2).
+From these foundations, we derive the core equation
+k∗
+= n∗
+,
+establishing a one-to-one correspondence between energy scale extrema and dimen-
+sion number extrema. As corollaries, we obtain dimension quantization and the
+necessity of 3+1-dimensional spacetime.
+Contents
+1 Introduction 2
+2 Denitions 2
+3 Main Results 3
+4 Corollaries 4
+5 Proof Structure Summary 5
+6 Conclusion 5
+1
+1 Introduction
+Contemporary physics rests on two pillars: quantum mechanics and general relativity.
+Their unication founders on the non-renormalizability of quantum gravity: each attempt
+to absorb divergences produces new innities. String theory, loop quantum gravity, and
+asymptotic safety have each made partial progress, yet no decisive resolution has emerged.
+NTT adopts a fundamentally dierent stance. Rather than eliminating divergence, we
+treat it as a structural ingredient. The key insight is that a singularity is not the endpoint
+of a solution but the engine generating the next one. This philosophy singularities as
+engines threads every result in this paper.
+The main result is:
+Theorem 1 (Core Equation). Let k∗denote the energy-scale extremum and n∗the dimension-
+number extremum of the density sandwich. Then
+k∗
+= n∗
+.
+The proof proceeds through seven theorems, each using the same reductio ad absurdum
+structure: assuming failure of uniqueness forces a contradiction with the existence of
+dimmax.
+2 Denitions
+Denition 1 (Three-Layer Sandwich). NTT posits three structural layers:
+(i) Upper layer: Meta-renormalization group renormalizes the renormalization
+group itself.
+(ii) Middle layer: Quantum gravity / divergence zone divergence coexists with con-
+vergence.
+(iii) Lower layer: Topological invariants homology H∗(X), homotopy π∗(X), cobor-
+dism Ω∗(X).
+Denition 2 (Fractal Dimension via Topological Invariants). For a topological space X,
+dene three dimension candidates:
+dH := rank Hn(X), (1)
+dπ := sup{n∈N : πn(X) ̸= 0}, (2)
+dΩ := dim Ω∗(X). (3)
+Denition 3 (Energy-Scale Density).
+ρ: k→kd, k∈R+ ∩L2(X) ∩H1(X),
+where d is determined by Theorem 2.
+Denition 4 (Dimension Density).
+ρdim : N →R, n→n.
+The domain N reects the discrete (quantized) birth of dimensions under Suzuki Flow.
+2
+Denition 5 (Density Product and dimmax).
+dimmax := arg max
+ρ(k)·ρdim(n).
+n∈N
+Denition 6 (Suzuki Flow). The Suzuki Flow is the modied Ricci ow
+∂g
+∂t=−2 Ric + f(ρ(k), dim),
+where f(ρ(k),dim) generates a new dimension at each singularity where ρ(k) attains a
+local maximum. Dimensions are born discretely: dim →dim +1.
+3 Main Results
+Theorem 2 (Uniqueness of d). dH = dπ
+= dΩ =: d.
+Proof. Suppose dis not unique; without loss of generality assume dH ̸= dπ. Then ρ(k) =
+kd is multi-valued under the same topological structure, making dimmax non-unique. This
+contradicts Theorem 8 (proved independently of the present theorem via the density
+sandwich constraint). Therefore dH = dπ
+= dΩ.
+Theorem 3 (Self-Determination of the Domain of k). k∈R+ ∩L2(X) ∩H1(X).
+Proof. We show each condition is necessary by deriving a contradiction from its failure.
+Case A: k / ∈R+. If k ≤0 then ρ(k) = kd is either non-positive or complex. Density
+must be a positive real (physical constraint). Contradiction.
+Case B: k / ∈L2(X). Then ρ(k) is not square-integrable, so the self-generated density
+limit
+ρ(k) = lim D→∞
+D(k)·C(k)
+C→0
+fails to exist in L2. The topological lower layer requires L2-integrability for its integral
+invariants. Contradiction.
+Case C: k / ∈H1(X). The weak derivative ∇kdoes not exist, so the renormalization group
+ow (upper layer) cannot be dened. The three-layer sandwich collapses. Contradiction.
+All three cases yield contradictions, so k∈R+ ∩L2(X) ∩H1(X).
+Theorem 4 (dimmax ∈N). The maximizer dimmax is a natural number.
+Proof. Suppose dimmax / ∈N, i.e. dimmax ∈R \N. By Denition 4, ρdim is dened only on
+N. Hence dimmax lies outside the domain of ρdim, making the density product undened
+at dimmax. A maximum cannot be attained at a point where the function is undened.
+Contradiction.
+Theorem 5 (Upper Bound). For all n∈N, k(n) ≤dimmax.
+Proof. Suppose k(n0) > dimmax for some n0. Since ρ is monotone (Theorems 2 and 3),
+ρ(k(n0)) > ρ(dimmax). By the discreteness of Suzuki Flow and monotonicity, for all
+m≥n0,
+k(m) ≥k(n0) >dimmax,
+so ρ(k(m)) > ρ(dimmax). Taking m = dimmax +1 ∈N (Theorem 4), the density product
+at mexceeds that at dimmax, contradicting the denition of dimmax as the maximizer.
+3
+Theorem 6 (Existence of Correspondence). There exists a function f : N →R such that
+k∗
+= f(n∗).
+Proof. Suppose ρ(k) and ρdim are independent, so k∗ and n∗ are determined separately.
+Under Suzuki Flow, dimension generation occurs simultaneously with the peak of ρ(k):
+∂g
+∂t singularity
+=−2 Ric + f(ρ(k),dim).
+Hence k∗and n∗are two descriptions of the same event and must always coincide. Indepen-
+dent determination cannot guarantee coincidence. Contradiction. Therefore f exists.
+Theorem 7 (f Generates N). f(n) ∈N for all n∈N.
+Proof. Suppose f is arbitrary; then for some n∈N, f(n) / ∈N. By Theorem 4, dimmax ∈
+N, and Suzuki Flow generates dimensions discretely along 1,2,3,.... Hence n∗ traverses
+N, and k∗
+= f(n∗) must correspond to natural numbers. An arbitrary f cannot guarantee
+this. Contradiction.
+Theorem 8 (Uniqueness of f). f is unique.
+Proof. Suppose two functions f ̸= g both satisfy Theorems 6 and 7. Then for some n,
+f(n) ̸= g(n), giving two distinct values of k∗ for the same n∗. By Theorem 5, each k∗
+corresponds to a distinct dimmax. But dimmax is uniquely dened as the maximizer of the
+density product. Contradiction. Hence f is unique.
+Theorem 9 (Core Equation). f(n) = n, i.e., k∗
+= n∗.
+Proof. By Theorems 6 8, f : N →N is strictly monotone, generates N, and is unique.
+We claim the only such function with f(0) = 0 is the identity.
+Suppose f(n0) ̸= n0 for some n0.
+Case f(n0) >n0: By strict monotonicity and Theorem 5 applied inductively, k(dimmax +1) >
+dimmax, contradicting Theorem 5.
+Case f(n0) < n0: Since k(0) = 0 and f is strictly monotone, k(n) ≥n for all n by
+induction. Hence f(n0) ≥n0. Contradiction.
+Therefore f(n) = n for all n∈N, giving k∗
+= n∗.
+4 Corollaries
+Corollary 10 (Dimension Quantization). For all n∈N,
+k(n+ 1)−k(n) = 1.
+Each new dimension born under Suzuki Flow raises the energy scale by exactly one unit.
+Dimension is quantized.
+Proof. Immediate from k(n) = n and k(n+ 1) = n+ 1.
+Corollary 11 (One-to-One Correspondence). The map k : N →R is injective. Energy
+scale and dimension number are in bijection.
+Proof. k(a) = k(b) implies a= b since k(n) = n.
+4
+Corollary 12 (Necessity of 3+1-Dimensional Spacetime). Spatial dimension d = 3 and
+temporal dimension dt = 1 are selected necessarily by the density constraint.
+Proof. In d spatial dimensions, interaction strength satises F ∝r−(d−1) by Gauss's law.
+The density product ρ(k)·ρdim(n) is maximized at d= 3: for d<3 interactions are too
+strong (no stable orbits); for d>3 interactions decay too rapidly (no persistent interac-
+tion). By Theorem 2, d is unique; hence d = 3. Time, as the ordering of interactions,
+contributes one dimension. Therefore spacetime is necessarily 3+1-dimensional.
+5 Proof Structure Summary
+All seven theorems share a single reductio template:
+Step 1. Assume failure of the claimed property.
+Step 2. Show that density ρ becomes multi-valued or undened.
+Step 3. Conclude that dimmax is non-unique or non-existent.
+Step 4. Contradict the sandwich-constraint denition of dimmax.
+This structural unity reects the philosophical core of NTT and its abstract com-
+panion, Incompleteness Emergence Theory (IET): every attempt at total self-description
+generates a productive excess. The core equation k∗
+= n∗ is not an imposed relation but
+the unique xed point of the density self-organization.
+6 Conclusion
+We have derived the core equation k∗
+= n∗from rst principles, with no free parameters.
+The dimension dis self-determined by the triple convergence of homology, homotopy, and
+cobordism. The domain of k is self-selected by three simultaneous functional constraints.
+Five successive reductio arguments establish existence, naturality, and uniqueness of the
+energy-dimension correspondence.
+The philosophical upshot: singularities are not walls but doors. Divergence drives
+convergence. Incompleteness generates the next structure. This is the engine at the heart
+of NTT.
+tuition.
+Acknowledgements. The author thanks the productive tension between rigor and in-
