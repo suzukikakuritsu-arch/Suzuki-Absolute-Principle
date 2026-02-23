@@ -11,6 +11,7 @@
 
 ### お問い合わせ先
 suzuki.himazin@gmail.com
+suzuki.kakuritsu@gmail.com
 
 ### 販売価格
 各プロジェクト、またはライセンス契約ごとの個別見積もり、あるいは月額定額制プランに準ずる。
